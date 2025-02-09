@@ -21,14 +21,14 @@ body {
 
 @media (prefers-color-scheme: light) {
 	body {
-		background: SeaShell;
+		background: #cfe2f3;
 		color: black;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: SeaShell;
+		background: #cfe2f3;
 		color: black;
 	}
 }
