@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kennebec Contra Dance</title>
+		<meta content="utf-8" http-equiv="encoding">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Kennebec contra dance Hallowell Maine">
+		<meta name="description" content="A contra dance every 4th Saturday in Hallowell, Maine.">
+		<meta http-equiv="content-language" content="en-us">
+		<link rel="icon" type="image/x-icon" href="logo.png">
+		<link rel="apple-touch-icon" href="logo.png"/>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+		<link rel="canonical" href="https://www.kennebec-contra.org"/>
+
+		<script data-goatcounter="https://kennebec-contra.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+	</head>
+	<body>
+		<!--<iframe src="https://proxybyregex.azurewebsites.net/api/ProxyByRegex?url=https://docs.google.com/document/d/e/2PACX-1vRfNvBm2W1FWVOid4PgBbWRPnwR2ZcHlVNLb65L4xCzQcHLcqkxlIFTbSl3DnUMuL6LrqdZosINsXdy/pub?embedded=true"
+				frameborder=0 style='height: 100%; width: 100%'>
+		</iframe>-->
+
+		<!--https://github.com/kewisch/ical.js/-->
+		<script type="module">
+
+			fetch("https://proxybyregex.azurewebsites.net/api/ProxyByRegex?url=https://docs.google.com/document/d/e/2PACX-1vRfNvBm2W1FWVOid4PgBbWRPnwR2ZcHlVNLb65L4xCzQcHLcqkxlIFTbSl3DnUMuL6LrqdZosINsXdy/pub?embedded=true")
+
+			var proxy = 'https://proxybyregex.azurewebsites.net/api/ProxyByRegex?url='
+
+			var sourceCal = proxy + 'https://calendar.google.com/calendar/ical/847d1b4679c840d289b7980cfcaa598c5ef7a8eec70f0d8eb554e67f0bf6320e%40group.calendar.google.com/public/basic.ics';
+		  
+		  import ICAL from "https://unpkg.com/ical.js/dist/ical.min.js";
+			fetch(sourceCal)
+				.then(response => response.text())
+				.then(data => {
+					const jcalData = ICAL.parse(data);
+					console.log(jcalData);
+				})
+				.catch(error => console.error('Error fetching calendar:', error));
+		  
+		</script>
+		
+	</body>
+</html>
